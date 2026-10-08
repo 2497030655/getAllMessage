@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.sparkmote.getallmessage" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>消息助手</name>
+    <description>小红书/抖音私信移动端（连接云端）</description>
+    <author email="dev@example.com" href="https://example.com">getAllMessage</author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-navigation href="*" />
+    <preference name="SplashScreenDelay" value="0" />
+    <preference name="AndroidInsecureFileModeEnabled" value="true" />
+    <preference name="GradleVersion" value="8.13" />
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+        <application android:usesCleartextTraffic="true" />
+    </edit-config>
+</widget>

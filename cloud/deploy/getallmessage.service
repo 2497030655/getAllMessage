@@ -1,0 +1,15 @@
+[Unit]
+Description=getAllMessage Cloud IM Parser
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/opt/getAllMessage
+EnvironmentFile=/opt/getAllMessage/cloud.env
+ExecStart=/opt/getAllMessage/venv/bin/python -m cloud.main
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

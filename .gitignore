@@ -1,0 +1,41 @@
+﻿# 密钥与本地配置
+cloud.env
+*.pem
+*.key
+.id_rsa*
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# 登录态 / 数据
+edge_profile/
+accounts/
+accounts.json
+*.log
+capture.log
+
+# 移动端依赖与构建产物
+mobile/node_modules/
+mobile/platforms/android/app/build/
+mobile/platforms/android/.gradle/
+mobile/platforms/android/local.properties
+mobile/*.apk
+mobile/platforms/android/app/build/**
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# 临时打包
+*.tgz
+*.zip
+!mobile/www/**/*.js
